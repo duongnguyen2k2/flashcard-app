@@ -1,0 +1,158 @@
+/* =========================================
+   Color Palette
+   ========================================= */
+
+:root {
+    /* ========= Neutral ========= */
+    --neutral-900: #2f1401;
+    --neutral-600: #6d5b4d;
+    --neutral-100: #f7f3f0;
+    --neutral-0: #ffffff;
+
+    /* ========= Accent Colors ========= */
+    --yellow-500: #f8cb46;
+
+    --blue-400: #92adeb;
+    --blue-600: #5072c7;
+
+    --teal-400: #47d9c9;
+
+    --pink-400: #fc8ae5;
+    --pink-500: #f073a3;
+    --pink-700: #e11966;
+}
+
+/* =========================================
+   Optional Utility Classes
+   ========================================= */
+
+/* Background */
+.bg-neutral-900 {
+    background-color: var(--neutral-900);
+}
+
+.bg-neutral-600 {
+    background-color: var(--neutral-600);
+}
+
+.bg-neutral-100 {
+    background-color: var(--neutral-100);
+}
+
+.bg-neutral-0 {
+    background-color: var(--neutral-0);
+}
+
+.bg-yellow-500 {
+    background-color: var(--yellow-500);
+}
+
+.bg-blue-400 {
+    background-color: var(--blue-400);
+}
+
+.bg-blue-600 {
+    background-color: var(--blue-600);
+}
+
+.bg-teal-400 {
+    background-color: var(--teal-400);
+}
+
+.bg-pink-400 {
+    background-color: var(--pink-400);
+}
+
+.bg-pink-500 {
+    background-color: var(--pink-500);
+}
+
+.bg-pink-700 {
+    background-color: var(--pink-700);
+}
+
+/* Text */
+.text-neutral-900 {
+    color: var(--neutral-900);
+}
+
+.text-neutral-600 {
+    color: var(--neutral-600);
+}
+
+.text-neutral-100 {
+    color: var(--neutral-100);
+}
+
+.text-neutral-0 {
+    color: var(--neutral-0);
+}
+
+.text-yellow-500 {
+    color: var(--yellow-500);
+}
+
+.text-blue-400 {
+    color: var(--blue-400);
+}
+
+.text-blue-600 {
+    color: var(--blue-600);
+}
+
+.text-teal-400 {
+    color: var(--teal-400);
+}
+
+.text-pink-400 {
+    color: var(--pink-400);
+}
+
+.text-pink-500 {
+    color: var(--pink-500);
+}
+
+.text-pink-700 {
+    color: var(--pink-700);
+}
+
+/* Border */
+.border-neutral-900 {
+    border-color: var(--neutral-900);
+}
+
+.border-neutral-600 {
+    border-color: var(--neutral-600);
+}
+
+.border-neutral-100 {
+    border-color: var(--neutral-100);
+}
+
+.border-yellow-500 {
+    border-color: var(--yellow-500);
+}
+
+.border-blue-400 {
+    border-color: var(--blue-400);
+}
+
+.border-blue-600 {
+    border-color: var(--blue-600);
+}
+
+.border-teal-400 {
+    border-color: var(--teal-400);
+}
+
+.border-pink-400 {
+    border-color: var(--pink-400);
+}
+
+.border-pink-500 {
+    border-color: var(--pink-500);
+}
+
+.border-pink-700 {
+    border-color: var(--pink-700);
+}

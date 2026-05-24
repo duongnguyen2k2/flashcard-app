@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,58 +10,83 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Frontend Mentor | Flashcard app</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <!-- Study Mode start -->
+    <main class="app__main">
+      <header class="app__header">
+        <div class="app__header-inner">
+          <a href="./index.html" aria-label="Flashcards home">
+            <img
+              class="app__logo"
+              src="./assets/images/logo-small.svg"
+              alt="Flashcards"
+            />
+          </a>
 
-    Study Mode
-    All Cards
+          <nav class="view-nav" aria-label="Primary">
+            <button
+              type="button"
+              class="view-nav__button view-nav__button--active"
+              aria-current="page"
+            >
+              Study Mode
+            </button>
+            <button type="button" class="view-nav__button" disabled>
+              All Cards
+            </button>
+          </nav>
+        </div>
+      </header>
+      <div class="study-layout">
+        <section class="study-layout__content" aria-labelledby="study-heading">
+          <h1 id="study-heading" class="section-heading">Study Mode</h1>
 
-    All Categories
-    Hide Mastered
+          <p class="loading-state" data-loading-state>Loading flashcards...</p>
+          <p class="error-state is-hidden" data-error-state role="alert"></p>
 
-    Shuffle
+          <div class="is-hidden" data-study-content>
+            <article class="study-card" data-study-card aria-live="polite">
+              <!-- Rendered by JavaScript -->
+            </article>
 
-    <!-- Populate card from JSON file -->
+            <div class="study-meta">
+              <p class="study-meta__counter" data-card-counter>Card 1 of 40</p>
 
-    I Know This
-    Reset Progress
+              <div class="study-actions">
+                <button type="button" class="btn btn--primary" disabled>
+                  I Know This
+                </button>
+                <button type="button" class="btn btn--secondary" disabled>
+                  Reset Progress
+                </button>
+              </div>
+            </div>
 
-    Previous
-    Next
+            <div class="study-actions">
+              <button type="button" class="btn btn--secondary" disabled>
+                Previous
+              </button>
+              <button type="button" class="btn btn--secondary" disabled>
+                Next
+              </button>
+            </div>
+          </div>
+        </section>
 
-    Study Statistics
-    Totals Cards
-    Mastered
-    In Progress
-    Not Started
-    <!-- Study Mode end -->
-
-    <!-- All Cards start -->
-
-    Study Mode
-    All Cards
-
-    Question
-    e.g., "What is the capital of France?"
-
-    Answer
-    e.g., "Paris"
-
-    Category
-    e.g., "Geography"
-
-    Create Card
-
-    All Categories
-    Hide Mastered
-
-    Shuffle
-    
-    <!-- Populate cards from JSON file -->
-
-    <!-- All Cards end -->
+        <aside class="study-layout__sidebar" aria-labelledby="stats-heading">
+          <section class="stats-panel">
+            <h2 id="stats-heading" class="stats-panel__title">
+              Study Statistics
+            </h2>
+            <ul class="stats-list" data-stats-list>
+              <!-- Rendered by JavaScript -->
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
   </body>
 </html>
