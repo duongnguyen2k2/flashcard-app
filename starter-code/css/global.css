@@ -1,25 +1,25 @@
 /* global.css */
 @font-face {
   font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+  src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -36,6 +36,10 @@ body {
   color: var(--neutral-900);
   background: var(--neutral-100);
   font-weight: 500;
+  height: 100dvh;
+  max-width: 1110px;
+  width: 100%;
+  /* width: 100vw; */
 }
 
 img,
@@ -49,4 +53,7 @@ h2,
 h3,
 h4 {
   line-height: var(--leading-tight);
+}
+button {
+  all: unset;
 }

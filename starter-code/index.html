@@ -15,78 +15,32 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <main class="app__main">
-      <header class="app__header">
-        <div class="app__header-inner">
-          <a href="./index.html" aria-label="Flashcards home">
-            <img
-              class="app__logo"
-              src="./assets/images/logo-small.svg"
-              alt="Flashcards"
-            />
-          </a>
-
-          <nav class="view-nav" aria-label="Primary">
-            <button
-              type="button"
-              class="view-nav__button view-nav__button--active"
-              aria-current="page"
-            >
-              Study Mode
-            </button>
-            <button type="button" class="view-nav__button" disabled>
-              All Cards
-            </button>
-          </nav>
-        </div>
-      </header>
-      <div class="study-layout">
-        <section class="study-layout__content" aria-labelledby="study-heading">
-          <h1 id="study-heading" class="section-heading">Study Mode</h1>
-
-          <p class="loading-state" data-loading-state>Loading flashcards...</p>
-          <p class="error-state is-hidden" data-error-state role="alert"></p>
-
-          <div class="is-hidden" data-study-content>
-            <article class="study-card" data-study-card aria-live="polite">
-              <!-- Rendered by JavaScript -->
-            </article>
-
-            <div class="study-meta">
-              <p class="study-meta__counter" data-card-counter>Card 1 of 40</p>
-
-              <div class="study-actions">
-                <button type="button" class="btn btn--primary" disabled>
-                  I Know This
-                </button>
-                <button type="button" class="btn btn--secondary" disabled>
-                  Reset Progress
-                </button>
-              </div>
-            </div>
-
-            <div class="study-actions">
-              <button type="button" class="btn btn--secondary" disabled>
-                Previous
-              </button>
-              <button type="button" class="btn btn--secondary" disabled>
-                Next
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <aside class="study-layout__sidebar" aria-labelledby="stats-heading">
-          <section class="stats-panel">
-            <h2 id="stats-heading" class="stats-panel__title">
-              Study Statistics
-            </h2>
-            <ul class="stats-list" data-stats-list>
-              <!-- Rendered by JavaScript -->
-            </ul>
-          </section>
-        </aside>
+    <header class="app__header">
+      <div class="app__logo">
+        <a href="./index.html" aria-label="Flashcards home">
+          <img src="./assets/images/logo-small.svg" alt="Flashcards" />
+        </a>
+        <p class="text-preset-1">Flashcard</p>
       </div>
-    </main>
+
+      <nav class="app__nav" aria-label="Primary">
+        <button type="button" class="btn active text-preset-4-semibold">
+          Study Mode
+        </button>
+        <button type="button" class="btn text-preset-4-semibold">
+          All Cards
+        </button>
+      </nav>
+    </header>
+    <section class="app__card">
+      <div class="card__questions">
+        <div class=""></div>
+        <div class="card__categories">
+          <h1 class="title">All Categories</h1>
+          <ul class="list_categories"></ul>
+        </div>
+      </div>
+      <div class="card__statistics"></div>
+    </section>
   </body>
 </html>
