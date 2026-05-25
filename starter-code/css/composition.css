@@ -1,0 +1,29 @@
+.app__main {
+}
+.app__header {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.app__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+}
+.app__logo img {
+  width: 4rem;
+  height: 4rem;
+}
+.app__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 999px;
+  box-shadow: 2px 2px 0 var(--neutral-900);
+}
