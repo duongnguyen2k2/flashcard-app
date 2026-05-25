@@ -7,3 +7,22 @@
   border: 1.4px solid var(--neutral-900);
   background-color: var(--yellow-500);
 }
+
+.btn__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+}
+.btn__suffle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 999px;
+  padding: 0.8rem 1rem;
+}

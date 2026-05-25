@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
 
     <link
       rel="icon"
@@ -15,32 +15,56 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <header class="app__header">
-      <div class="app__logo">
+    <div class="app__container">
+      <header class="app__header">
         <a href="./index.html" aria-label="Flashcards home">
-          <img src="./assets/images/logo-small.svg" alt="Flashcards" />
+          <img
+            src="./assets/images/logo-large.svg"
+            alt="Flashcards"
+            class="app__logo"
+          />
         </a>
-        <p class="text-preset-1">Flashcard</p>
-      </div>
 
-      <nav class="app__nav" aria-label="Primary">
-        <button type="button" class="btn active text-preset-4-semibold">
-          Study Mode
-        </button>
-        <button type="button" class="btn text-preset-4-semibold">
-          All Cards
-        </button>
-      </nav>
-    </header>
-    <section class="app__card">
-      <div class="card__questions">
-        <div class=""></div>
-        <div class="card__categories">
-          <h1 class="title">All Categories</h1>
-          <ul class="list_categories"></ul>
+        <nav class="app__nav" aria-label="Primary">
+          <button type="button" class="btn active text-preset-4-semibold">
+            Study Mode
+          </button>
+          <button type="button" class="btn text-preset-4-semibold">
+            All Cards
+          </button>
+        </nav>
+      </header>
+      <section class="app__card">
+        <div class="card__questions">
+          <div class="card__categories">
+            <button class="btn__category text-preset-3 fw-regular">
+              All Categories
+              <span>
+                <img
+                  src="./assets/images/icon-chevron-down.svg"
+                  alt="Expand categories"
+                />
+              </span>
+            </button>
+            <!-- <ul class="list_categories"></ul> -->
+            <div>
+              <input type="checkbox" id="Hide Mastered" name="Hide Mastered" />
+              <label for="Hide Mastered">Hide Mastered</label>
+            </div>
+          </div>
+          <div class="card__suffle">
+            <button class="btn__suffle text-preset-3 fw-regular">
+              <span
+                ><img
+                  src="./assets/images/icon-shuffle.svg"
+                  alt="Shuffle cards"
+              /></span>
+              Shuffle
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="card__statistics"></div>
-    </section>
+        <div class="card__statistics"></div>
+      </section>
+    </div>
   </body>
 </html>
