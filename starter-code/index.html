@@ -34,25 +34,29 @@
           </button>
         </nav>
       </header>
-      <section class="app__card">
-        <div class="card__questions">
-          <div class="card__categories">
-            <button class="btn__category text-preset-3 fw-regular">
-              All Categories
-              <span>
-                <img
-                  src="./assets/images/icon-chevron-down.svg"
-                  alt="Expand categories"
+      <main class="app__main">
+        <section class="app__card">
+          <div class="card__header">
+            <div class="card__categories">
+              <button class="btn__category text-preset-3 fw-regular">
+                All Categories
+                <span>
+                  <img
+                    src="./assets/images/icon-chevron-down.svg"
+                    alt="Expand categories"
+                  />
+                </span>
+              </button>
+              <!-- <ul class="list_categories"></ul> -->
+              <div>
+                <input
+                  type="checkbox"
+                  id="Hide Mastered"
+                  name="Hide Mastered"
                 />
-              </span>
-            </button>
-            <!-- <ul class="list_categories"></ul> -->
-            <div>
-              <input type="checkbox" id="Hide Mastered" name="Hide Mastered" />
-              <label for="Hide Mastered">Hide Mastered</label>
+                <label for="Hide Mastered">Hide Mastered</label>
+              </div>
             </div>
-          </div>
-          <div class="card__suffle">
             <button class="btn__suffle text-preset-3 fw-regular">
               <span
                 ><img
@@ -62,9 +66,41 @@
               Shuffle
             </button>
           </div>
-        </div>
-        <div class="card__statistics"></div>
-      </section>
+          <div class="card__flashcard">
+            <div class="card__flashcard__content">
+              <div class="card__flashcard__hero"></div>
+              <!-- Category badge -->
+              <div class="card__flashcard__category">
+                <span class="badge">Web Development</span>
+              </div>
+              <!-- Card content -->
+              <div class="card__flashcard__body">
+                <h2 class="card__flashcard__question">
+                  What does HTML stand for?
+                </h2>
+                <p class="card__flashcard__hint">Click to reveal answer</p>
+              </div>
+              <div class="card__flashcard__btn">
+                <button class="btn__know">
+                  <img
+                    src="./assets/images/icon-circle-check.svg"
+                    alt="I know this card"
+                  />
+                  I know this
+                </button>
+                <button class="btn__dont-know">
+                  <img
+                    src="./assets/images/icon-reset.svg"
+                    alt="reset card progress"
+                  />
+                  Reset Progress
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card__statistics"></section>
+      </main>
     </div>
   </body>
 </html>
