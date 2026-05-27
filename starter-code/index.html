@@ -69,33 +69,44 @@
           <div class="card__flashcard">
             <div class="card__flashcard__content">
               <div class="card__flashcard__hero"></div>
+              <div class="card__flashcard__star_blue"></div>
+              <div class="card__flashcard__star_yellow"></div>
               <!-- Category badge -->
-              <div class="card__flashcard__category">
+              <div class="card__flashcard__category relative">
                 <span class="badge">Web Development</span>
               </div>
               <!-- Card content -->
-              <div class="card__flashcard__body">
-                <h2 class="card__flashcard__question">
+              <div class="card__flashcard__body relative">
+                <h2 class="card__flashcard__question text-preset-1 fw-bold">
                   What does HTML stand for?
                 </h2>
-                <p class="card__flashcard__hint">Click to reveal answer</p>
+                <p class="card__flashcard__hint text-preset-3 fw-regular">
+                  Click to reveal answer
+                </p>
               </div>
-              <div class="card__flashcard__btn">
-                <button class="btn__know">
-                  <img
-                    src="./assets/images/icon-circle-check.svg"
-                    alt="I know this card"
-                  />
-                  I know this
-                </button>
-                <button class="btn__dont-know">
-                  <img
-                    src="./assets/images/icon-reset.svg"
-                    alt="reset card progress"
-                  />
-                  Reset Progress
-                </button>
+              <div class="card__flashcard__progress" style="--progress: 0%">
+                <div class="progress__track">
+                  <div class="progress__fill"></div>
+                  <!-- width lấy từ --progress -->
+                </div>
+                <span class="progress__label">0/5</span>
               </div>
+            </div>
+            <div class="card__flashcard__btn relative">
+              <button class="btn__know">
+                <img
+                  src="./assets/images/icon-circle-check.svg"
+                  alt="I know this card"
+                />
+                I know this
+              </button>
+              <button class="btn__dont-know">
+                <img
+                  src="./assets/images/icon-reset.svg"
+                  alt="reset card progress"
+                />
+                Reset Progress
+              </button>
             </div>
           </div>
         </section>

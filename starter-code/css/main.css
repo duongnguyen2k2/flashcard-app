@@ -3,3 +3,5 @@
 @import './composition.css';
 @import './utilities.css';
 @import './blocks/button.css';
+@import './blocks/badge.css';
+@import './blocks/progress.css';

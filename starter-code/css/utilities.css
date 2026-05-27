@@ -214,6 +214,10 @@
 .fw-bold {
   font-weight: 700;
 }
+.relative {
+  position: relative;
+  z-index: 2;
+}
 
 /* =========================================
    Text Align Utilities

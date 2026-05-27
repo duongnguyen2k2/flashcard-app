@@ -73,4 +73,32 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 1;
+}
+.card__flashcard__star_yellow {
+  position: absolute;
+  bottom: 4.5rem;
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-image: url('../assets/images/pattern-star-yellow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.card__flashcard__star_blue {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-image: url('../assets/images/pattern-star-blue.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+.card__flashcard__body h2 {
+  margin-bottom: 1.5rem;
 }
