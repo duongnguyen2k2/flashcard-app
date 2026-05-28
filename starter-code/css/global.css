@@ -37,6 +37,7 @@ body {
   background: var(--neutral-100);
   font-weight: 500;
   height: 100dvh;
+  /* overflow: hidden; */
 }
 
 img,
@@ -51,6 +52,6 @@ h3,
 h4 {
   line-height: var(--leading-tight);
 }
-button {
-  all: unset;
+li {
+  list-style: none;
 }
