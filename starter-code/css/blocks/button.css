@@ -20,7 +20,7 @@
   background-color: var(--neutral-0);
   padding: 0.8rem 1rem;
 }
-.btn__suffle {
+.btn__shuffle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +29,11 @@
   border-radius: 999px;
   padding: 0.8rem 1rem;
   background-color: var(--neutral-0);
+  transition: all 0.4s;
+}
+.btn__shuffle:hover {
+  transform: translateY(-10%);
+  box-shadow: 2px 2px 0 var(--neutral-900);
 }
 
 .btn__know {

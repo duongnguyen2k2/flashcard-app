@@ -5,3 +5,9 @@
   background-color: var(--neutral-0);
   box-shadow: 2px 2px 0 var(--neutral-900);
 }
+
+@media (max-width: 1024px) {
+  .badge {
+    padding: 0.2rem 1.4rem;
+  }
+}
