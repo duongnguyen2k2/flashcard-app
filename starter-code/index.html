@@ -17,7 +17,7 @@
   <body>
     <div class="app__container">
       <header class="app__header">
-        <a href="./index.html" aria-label="Flashcards home">
+        <a href="./index.html" aria-label="Flashcards home" class="app__logo">
           <img
             src="./assets/images/logo-large.svg"
             alt="Flashcards"
@@ -26,10 +26,10 @@
         </a>
 
         <nav class="app__nav" aria-label="Primary">
-          <button type="button" class="btn active text-preset-4-semibold">
+          <button type="button" class="btn active text-preset-4 fw-semibold">
             Study Mode
           </button>
-          <button type="button" class="btn text-preset-4-semibold">
+          <button type="button" class="btn text-preset-4 fw-semibold">
             All Cards
           </button>
         </nav>
@@ -57,7 +57,7 @@
                 <label for="Hide Mastered">Hide Mastered</label>
               </div>
             </div>
-            <button class="btn__suffle text-preset-3 fw-regular">
+            <button class="btn__shuffle text-preset-3 fw-regular">
               <span
                 ><img
                   src="./assets/images/icon-shuffle.svg"
@@ -92,15 +92,15 @@
                 <span class="progress__label">0/5</span>
               </div>
             </div>
-            <div class="card__flashcard__btn relative">
-              <button class="btn__know">
+            <div class="card__flashcard__btn">
+              <button class="btn__know text text-preset-3 fw-semibold">
                 <img
                   src="./assets/images/icon-circle-check.svg"
                   alt="I know this card"
                 />
                 I know this
               </button>
-              <button class="btn__dont-know">
+              <button class="btn__progress">
                 <img
                   src="./assets/images/icon-reset.svg"
                   alt="reset card progress"
@@ -109,8 +109,103 @@
               </button>
             </div>
           </div>
+          <footer class="card-nav" aria-label="Card navigation">
+            <button
+              class="btn-outline btn-nav btn-nav--prev text-preset-3 fw-bold text-neutral-600"
+              aria-label="Previous card"
+            >
+              <img
+                src="./assets/images/icon-chevron-left.svg"
+                alt="previous-icon"
+              />
+              Previous
+            </button>
+
+            <p class="card-nav__counter" aria-live="polite">Card 1 of 40</p>
+
+            <button
+              class="btn-outline btn-nav btn-nav--next text-preset-3 fw-bold text-neutral-600"
+              aria-label="Next card"
+            >
+              Next
+              <img
+                src="./assets/images/icon-chevron-right.svg"
+                alt="previous-icon"
+              />
+            </button>
+          </footer>
         </section>
-        <section class="card__statistics"></section>
+        <section class="card__statistics">
+          <h2 class="stats-panel__title text-preset-2 fw-bold">
+            Study Statistics
+          </h2>
+
+          <ul class="stats-list" role="list">
+            <li class="stat-card stat-card--total-cards">
+              <div class="stat-card__info">
+                <span class="stat-card__label text-preset-3">Total Cards</span>
+                <strong class="stat-card__value text-preset-1 fw-bold"
+                  >40</strong
+                >
+              </div>
+              <div class="stat-card__accent bg-blue-400" aria-hidden="true">
+                <img
+                  src="./assets/images/icon-stats-total.svg"
+                  alt=""
+                  class="stat-card__icon"
+                />
+              </div>
+            </li>
+
+            <li class="stat-card stat-card--mastered">
+              <div class="stat-card__info">
+                <span class="stat-card__label text-preset-3">Mastered</span>
+                <strong class="stat-card__value text-preset-1 fw-bold"
+                  >11</strong
+                >
+              </div>
+              <div class="stat-card__accent bg-teal-400" aria-hidden="true">
+                <img
+                  src="./assets/images/icon-stats-mastered.svg"
+                  alt=""
+                  class="stat-card__icon"
+                />
+              </div>
+            </li>
+
+            <li class="stat-card stat-card--in-progress">
+              <div class="stat-card__info">
+                <span class="stat-card__label text-preset-3">In Progress</span>
+                <strong class="stat-card__value text-preset-1 fw-bold"
+                  >21</strong
+                >
+              </div>
+              <div class="stat-card__accent bg-pink-500" aria-hidden="true">
+                <img
+                  src="./assets/images/icon-stats-in-progress.svg"
+                  alt=""
+                  class="stat-card__icon"
+                />
+              </div>
+            </li>
+
+            <li class="stat-card stat-card--not-started">
+              <div class="stat-card__info">
+                <span class="stat-card__label text-preset-3">Not Started</span>
+                <strong class="stat-card__value text-preset-1 fw-bold"
+                  >8</strong
+                >
+              </div>
+              <div class="stat-card__accent bg-pink-400" aria-hidden="true">
+                <img
+                  src="./assets/images/icon-stats-not-started.svg"
+                  alt=""
+                  class="stat-card__icon"
+                />
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
   </body>

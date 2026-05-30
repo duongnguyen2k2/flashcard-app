@@ -1,7 +1,9 @@
 .btn {
-  padding: 0.6rem 0.8rem;
+  padding: 1rem 1.5rem;
   margin: 2px 2px;
   border-radius: 999px;
+  background-color: var(--neutral-0);
+  border: none;
 }
 .btn.active {
   border: 1.4px solid var(--neutral-900);
@@ -15,9 +17,10 @@
   gap: 0.4rem;
   border: 1.4px solid var(--neutral-900);
   border-radius: 999px;
+  background-color: var(--neutral-0);
   padding: 0.8rem 1rem;
 }
-.btn__suffle {
+.btn__shuffle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,4 +28,65 @@
   border: 1.4px solid var(--neutral-900);
   border-radius: 999px;
   padding: 0.8rem 1rem;
+  background-color: var(--neutral-0);
+  transition: all 0.4s;
+}
+.btn__shuffle:hover {
+  transform: translateY(-10%);
+  box-shadow: 2px 2px 0 var(--neutral-900);
+}
+
+.btn__know {
+  background-color: var(--yellow-500);
+  padding: 0.5rem 1rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 999px;
+  box-shadow: 2px 2px 0 var(--neutral-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.4s;
+}
+.btn__know:hover {
+  transform: translateY(-10%);
+  box-shadow: 4px 4px 0 var(--neutral-900);
+}
+.btn__progress {
+  background-color: var(--neutral-0);
+  padding: 0.5rem 1rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 999px;
+  box-shadow: 2px 2px 0 var(--neutral-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.4s;
+}
+.btn__progress:hover {
+  transform: translateY(-10%);
+  box-shadow: 4px 4px 0 var(--neutral-900);
+}
+.btn__progress img:hover {
+  transform: rotate(360deg);
+  transition: all 0.4s;
+}
+
+.btn-nav--prev,
+.btn-nav--next {
+  padding: 1rem 1.5rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 999px;
+  background-color: var(--neutral-0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.4s;
+}
+.btn-nav--prev:hover,
+.btn-nav--next:hover {
+  transform: translateY(-10%);
+  box-shadow: 2px 2px 0 var(--neutral-900);
 }

@@ -31,17 +31,17 @@
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: var(--neutral-900);
   background: var(--neutral-100);
   font-weight: 500;
-  height: 100dvh;
 }
 
 img,
 video {
   max-width: 100%;
+  /* width: 100%; */
   display: block;
 }
 
@@ -51,6 +51,6 @@ h3,
 h4 {
   line-height: var(--leading-tight);
 }
-button {
-  all: unset;
+li {
+  list-style: none;
 }

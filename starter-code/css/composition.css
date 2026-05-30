@@ -1,13 +1,16 @@
 .app__container {
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
 }
 .app__header {
-  padding: 2rem 1rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
+  /* flex-shrink: 0; */
 }
 .app__logo {
   width: 12rem;
@@ -27,13 +30,26 @@
 /*Card content*/
 .app__main {
   display: flex;
+  gap: 1rem;
 }
 .app__card {
   background-color: var(--neutral-0);
   border: 1.4px solid var(--neutral-900);
   border-radius: 1rem;
   box-shadow: 2px 2px 0 var(--neutral-900);
+  flex: 2;
+}
+.card__statistics {
+  /* align-self: str; */
+  padding: 1rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 1rem;
+  background-color: var(--neutral-0);
+  box-shadow: 2px 2px 0 var(--neutral-900);
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 .card__header {
   display: flex;
@@ -51,6 +67,7 @@
 
 .card__flashcard {
   padding: 1.5rem;
+  border-bottom: 1.4px solid var(--neutral-900);
 }
 .card__flashcard__content {
   display: flex;
@@ -63,8 +80,9 @@
   padding: 1.5rem 0;
   border-radius: 1rem;
   border: 1.4px solid var(--neutral-900);
-  gap: 8rem;
+  gap: clamp(5rem, 12vh, 20rem);
   box-shadow: 4px 4px 0 var(--neutral-900);
+  margin-bottom: 1.5rem;
 }
 .card__flashcard__hero {
   position: absolute;
@@ -101,4 +119,122 @@
 }
 .card__flashcard__body h2 {
   margin-bottom: 1.5rem;
+}
+
+.card__flashcard__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 2rem;
+}
+
+.card-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.stats-list {
+  padding-left: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.stat-card {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  max-width: 100%;
+  padding-left: 1rem;
+  border: 1.4px solid var(--neutral-900);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 0 var(--neutral-900);
+  overflow: hidden;
+}
+.stat-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 100%;
+}
+.stat-card__accent {
+  flex: 0 0 clamp(6rem, 7vw, 10rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1.4px solid var(--neutral-900);
+  align-self: stretch;
+}
+.stat-card__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/*REPONSIVE */
+@media (max-width: 1024px) {
+  .app__main {
+    flex-direction: column;
+  }
+  .stats-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .stat-card {
+    flex: 1 1 calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+  .stat-card__info {
+    flex: 1;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .app__container {
+    padding: 1rem;
+  }
+  .app__logo {
+    content: url('../assets/images/logo-small.svg');
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .app__header {
+    margin-bottom: 0.75rem;
+  }
+  .card__header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .card__categories {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .card__flashcard {
+    padding: 1rem;
+  }
+  .card__flashcard__btn {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+  .card__flashcard__btn button {
+    width: 100%;
+  }
+  .card-nav {
+    padding: 1rem;
+  }
+  .stats-list {
+    flex-direction: column;
+  }
+  .stat-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
